@@ -1,5 +1,5 @@
 from __future__ import print_function
-import sys
+import sys, re
 
 def hline(max_length):
 	dashes = '-' * max_length
@@ -8,7 +8,7 @@ def hline(max_length):
 		print(dashes, end="")
 	print('+')
 
-lines = [line.rstrip('\n').split('\t') for line in open(sys.argv[1])]
+lines = [re.split("\t+",line.replace("    ","\t").rstrip('\n')) for line in open(sys.argv[1])]
 rows = len(lines[0])
 
 max_length=0
