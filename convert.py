@@ -1,6 +1,7 @@
 # This Python file uses the following encoding: utf-8
 from __future__ import print_function
 import sys, re
+
 def hline(max_length, rows, double = False):
 	if double == False:
 		dashes = '-' * max_length
@@ -42,7 +43,12 @@ def print_table(lines, double_hline=False, double_vline=False):
 		print()
 		hline(max_length,rows, (i==0 and double_hline))
 
+def main():
+	lines = [re.split("\t+",line.replace("    ","\t").rstrip('\n')) for line in sys.stdin]
+	print_table(lines, ("-h" in sys.argv), ("-v" in sys.argv))
 
-lines = [re.split("\t+",line.replace("    ","\t").rstrip('\n')) for line in sys.stdin]
-print_table(lines, ("-h" in sys.argv), ("-v" in sys.argv))
+if __name__ == "__main__":
+	main()
+
+
 
