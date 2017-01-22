@@ -2,12 +2,17 @@
 
 Create a pretty looking ascii table.
 
-## Usage:
+## Usage (command line):
 ```
 python convert.py [options] < input_file.txt
 ```
 
 Where `input_file.txt` contains your input separated by (any amount of) tabs or 4/8/.. spaces and new-line characters and the output table is printed on the terminal.
+
+## Usage (gui):
+```
+python gui.py
+```
 
 ## Example:
 ### Input:
@@ -30,7 +35,7 @@ Vala	Valb	Valc	Vald
 +-------+-------+-------+-------+
 ```
 
-The input can have an arbitrary amount of tabs separating the values. For example either one of the following inputs will output the same result:
+The input in the command line execution can have an arbitrary amount of tabs separating the values. For example either one of the following inputs will output the same result:
 ### Inputs:
 ```
 input_size	algorithmA	algorithmB	algorithmC	algorithmD
