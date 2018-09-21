@@ -2,18 +2,18 @@
 from __future__ import print_function
 import sys, re
 
-def hline(max_length, rows, double = False):
+def hline(max_length, columns, double = False):
     if double == False:
         dashes = '-' * max_length
     else:
         dashes = '=' * max_length
-    for i in range(0,rows):
+    for i in range(0, columns):
         print('+', end="")
         print(dashes, end="")
     print('+')
 
 def print_table(lines, double_hline=False, double_vline=False):
-    rows = len(lines[0])
+    columns = len(lines[0])
     max_length=0
     for line in lines:
         for element in line:
@@ -23,7 +23,7 @@ def print_table(lines, double_hline=False, double_vline=False):
 
     max_length += 2
 
-    hline(max_length,rows)
+    hline(max_length,columns)
     for i in range(0,len(lines)):
     # for line in lines:
         line = lines[i]
@@ -41,7 +41,7 @@ def print_table(lines, double_hline=False, double_vline=False):
             else:
                 print(' '*right, end='|')
         print()
-        hline(max_length,rows, (i==0 and double_hline))
+        hline(max_length, columns, (i==0 and double_hline))
 
 def main():
     lines = [re.split("\t+",line.replace("    ","\t").rstrip('\n')) for line in sys.stdin]
