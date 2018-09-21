@@ -4,7 +4,7 @@ Create a pretty looking ascii table.
 
 ## Usage (command line):
 ```
-python convert.py [options] < input_file.txt
+python ascii-tables.py [options] < input_file.txt
 ```
 
 Where `input_file.txt` contains your input separated by (any amount of) tabs or 4/8/.. spaces and new-line characters and the output table is printed on the terminal.
@@ -79,4 +79,3 @@ input_size	algorithmA	algorithmB	algorithmC	algorithmD
 ### Options:
   1. [`-h` double horizontal line after first row. (Uses '=' character)]
   2. [`-v` double vertical line after first column. (Uses '‖' unicode character)]
- 
