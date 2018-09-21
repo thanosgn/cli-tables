@@ -32,7 +32,7 @@ def print_table(lines, double_hline=False, double_vline=False):
             element = line[j]
             length = len(element)
             blank_space = max_length - length
-            left = (blank_space / 2 )
+            left = int((blank_space / 2 ))
             right = blank_space - left
             print(' '*left, end="")
             print(element, end="")
