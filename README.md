@@ -1,10 +1,10 @@
-# ascii-tables
+# cli_tables
 
 Create a pretty looking ascii table.
 
 ## Usage (command line):
 ```
-python ascii-tables.py [options] < input_file.txt
+python cli_tables.py [options] < input_file.txt
 ```
 
 Where `input_file.txt` contains your input separated by (any amount of) tabs or 4/8/.. spaces and new-line characters and the output table is printed on the terminal.

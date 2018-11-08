@@ -21,7 +21,7 @@ def print_table(lines, double_hline=False, double_vline=False):
             if length > max_length:
                 max_length = length
 
-    max_length += 2
+    max_length += 2 
 
     hline(max_length,columns)
     for i in range(0,len(lines)):

@@ -2,7 +2,7 @@
 # http://www.java2s.com/Code/Python/GUI-Tk/2dtableofinputfields.htm
 
 from __future__ import print_function
-from convert import print_table
+from cli_tables import print_table
 from Tkinter import *
 import sys
 
@@ -33,7 +33,7 @@ def forgetElements():
 
 rows = []
 root = Tk()
-root.title("ASCII-Tables")
+root.title("cli_tables")
 
 l1 = Label(root, text="Rows")
 l2 = Label(root, text="Columns")
