@@ -2,17 +2,39 @@
 
 Create a pretty looking ascii table.
 
-## Usage (command line):
+## Installation (using pip):
+`cli_tables` is offered as a python package from pypi.
+You can install it with
+```bash
+pip install cli_tables
 ```
+
+Or download and use it as a standalone command line utility.
+
+## Usage (from python):
+```python
+>>> from cli_tables.cli_tables import *
+>>> print_table([['Col1', 'Col2', 'Col3', 'Col4'],['v11', 'v12', 'v13', 'v14'],['v21', 'v22', 'v23', 'v24']])
++------+------+------+------+
+| Col1 | Col2 | Col3 | Col4 |
++------+------+------+------+
+| v11  | v12  | v13  | v14  |
++------+------+------+------+
+| v21  | v22  | v23  | v24  |
++------+------+------+------+
+```
+## Usage (command line):
+```bash
 python cli_tables.py [options] < input_file.txt
 ```
 
 Where `input_file.txt` contains your input separated by (any amount of) tabs or 4/8/.. spaces and new-line characters and the output table is printed on the terminal.
 
 ## Usage (gui):
-```
+```bash
 python gui.py
 ```
+[['Col 1', 'Col 2', 'Col 3', 'Col 4'],['v11', 'v12', 'v13', 'v14'],['v21', 'v22', 'v23', 'v24']]
 
 ## Example:
 ### Input:
