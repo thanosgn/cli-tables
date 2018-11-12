@@ -36,7 +36,6 @@ Where `input_file.txt` contains your input separated by (any amount of) tabs or 
 ```bash
 python gui.py
 ```
-[['Col 1', 'Col 2', 'Col 3', 'Col 4'],['v11', 'v12', 'v13', 'v14'],['v21', 'v22', 'v23', 'v24']]
 
 ## Example:
 ### Input:
