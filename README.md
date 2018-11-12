@@ -13,8 +13,8 @@ Or download and use it as a standalone command line utility.
 
 ## Usage (from python):
 ```python
->>> from cli_tables.cli_tables import *
->>> print_table([['Col 1', 'Col 2', 'Col 3', 'Col 4'],['v11', 'v12', 'v13', 'v14'],['v21', 'v22', 'v23', 'v24']])
+from cli_tables.cli_tables import *
+print_table([['Col 1', 'Col 2', 'Col 3', 'Col 4'],['v11', 'v12', 'v13', 'v14'],['v21', 'v22', 'v23', 'v24']])
 ```
 ```
 +-------+-------+-------+-------+
