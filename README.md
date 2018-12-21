@@ -112,5 +112,5 @@ input_size	algorithmA	algorithmB	algorithmC	algorithmD
 ```
 
 ### Options:
-  1. [`-h` double horizontal line after first row. (Uses '=' character)]
-  2. [`-v` double vertical line after first column. (Uses '‖' unicode character)]
+  1. `-h` double horizontal line after first row. (Uses '=' character)
+  2. `-v` double vertical line after first column. (Uses '‖' unicode character)
