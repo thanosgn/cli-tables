@@ -70,7 +70,7 @@ Vala	Valb	Valc	Vald
 +-------+-------+-------+-------+
 ```
 
-The input in the command line execution can have an arbitrary amount of tabs separating the values. For example either one of the following inputs will output the same result:
+The input in the command line execution can have an arbitrary amount of tabs (or 4/8/.. spaces) separating the values. For example either one of the following inputs will output the same result:
 ### Inputs:
 ```
 input_size	algorithmA	algorithmB	algorithmC	algorithmD
